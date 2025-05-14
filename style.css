@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+}
+
+.sing {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#sign-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+::placeholder {
+    color: #000000;
+}
+
+::-moz-placeholder {
+    color: #000000;
+}
+
+::-webkit-input-placeholder {
+    color: #000000;
+}
+
+.login{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000db;
+}
+
+/* This new class is for login class  */
+.new {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.login form {
+    width: 400px;
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: #05d605;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #015001,
+                0 0 40px #015001,
+                0 0 80px #015001;
+}
+
+/* This animation class is for login class  */
+.animation {
+    animation: myani .3s linear;
+}
+
+@keyframes myani {
+    0% {
+        transform: scale(0%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+
+form input {
+    margin: 20px 10px;
+    padding: 10px 8px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid #000000;
+    outline: none;
+    transition: .1s linear;
+    &:focus {
+    box-shadow: 0 0 10px #015001;
+    }
+}
+
+
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    margin: 20px 10px;
+    padding: 10px 8px;
+    font-size: 18px;
+    background: transparent;
+    outline: none;
+    /* border: 2px solid #000000; */
+    border: none;
+    box-shadow: 0 0 10px #015001;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.display-none {
+    display: none;
+}
+.display-block {
+    display: block;
+}
